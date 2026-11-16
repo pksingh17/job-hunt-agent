@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "job-hunt-agent",
+  "version": "1.0.0",
+  "description": "An open, profile-agnostic career agent for onboarding candidates, discovering and researching jobs, scoring fit, auditing and building truthful resumes, estimating ATS/JD compatibility, preparing applications, and managing the pipeline.",
+  "author": {
+    "name": "Job Hunt Agent Contributors"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Job Hunt Agent",
+        "shortDescription": "Open career agent with Resume Lab and pipeline tracking.",
+        "longDescription": "Job Hunt Agent is a profile-agnostic career workflow. It onboards a candidate into a verified truth profile, discovers and researches jobs, scores fit transparently, audits and builds resumes, estimates ATS/JD compatibility, prepares truthful applications, and manages follow-ups and interviews. User data stays separate from the public core.",
+        "developerName": "Job Hunt Agent Contributors",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive"
+        ],
+        "composerIcon": "./assets/icon-512.png",
+        "logo": "./assets/icon-512.png",
+        "defaultPrompt": [
+          "Set me up for a job search and build my verified candidate profile.",
+          "Audit my resume and estimate ATS compatibility for this job description.",
+          "Run a job-search batch, research the companies, score the roles, and track the pipeline."
+        ]
+      }
+    }
+  }
+}

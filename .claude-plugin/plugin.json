@@ -1,0 +1,20 @@
+{
+  "name": "job-hunt-agent",
+  "version": "1.0.0",
+  "description": "An open, profile-agnostic career agent for any country or occupation: onboarding into a verified truth profile, job discovery and company research, transparent fit scoring, Resume Lab audits and Estimated ATS Compatibility, truthful applications, and pipeline follow-up.",
+  "author": {
+    "name": "Job Hunt Agent Contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jobs",
+    "job-search",
+    "career",
+    "resume",
+    "cv",
+    "ats",
+    "cover-letter",
+    "applications",
+    "tracker"
+  ]
+}

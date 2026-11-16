@@ -1,0 +1,19 @@
+# Personal job-hunt workspaces never belong in the repo
+/job-hunt/
+user-data/
+workspace/
+**/profiles/
+**/applications/
+**/runs/
+*.xlsx
+*.xls
+.env
+.env.*
+*.secret
+*.secrets
+credentials.json
+secrets.json
+.DS_Store
+__pycache__/
+*.pyc
+dist/

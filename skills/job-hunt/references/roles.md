@@ -15,7 +15,7 @@ A profile from before v1.1.0 has no `mode` line. Run it as `lite`, which is exac
 |---|---|---|---|
 | **Lead** (the `job-hunt` skill) | Whatever runs the session; the strongest available is best | Loads the profile, discovers and filters, scores, picks variants, writes the tracker, runs tailor and resume-lab, writes ATS playbooks and memory, talks to the user | Bulk browser clicking in full mode |
 | **company-researcher** agent | Sonnet | Researches one employer, returns a company card with suggested s_company and s_reviews | Scores anything else, writes files, contacts anyone |
-| **application-operator** agent | Sonnet | Fills one approved application on the employer's site or ATS, explores unknown portals, reports gates, questions and the review screen | Gates, self-ID questions, writing answers, submit, job-board-hosted apply flows |
+| **application-operator** agent | Sonnet | Fills one approved application on the employer's site or ATS (or, under `board_apply: assist`, a job-board apply flow the user opened), explores unknown portals, reports gates, questions and the review screen | Gates, self-ID questions, writing answers, submit, job-board-hosted apply flows unless `board_apply: assist` |
 | **tracker.py** | Code | Adds and updates tracker rows, totals, duplicate checks | Choosing scores |
 
 The lead is the only writer to the tracker, `profile.md`, `memory.md` and the ATS playbooks. Agents return text; the lead decides what gets saved. That keeps parallel work from colliding and keeps every saved fact checked.
